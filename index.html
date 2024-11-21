@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil des Exercices PHP</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Conteneur global */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Styles du titre principal */
+        h1 {
+            font-size: 3em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        /* Style du paragraphe explicatif */
+        p {
+            font-size: 1.5em;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        /* Conteneur pour les résumés d'exercices */
+        .exercise-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* Style des résumés */
+        .exercise-card {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        /* Animation au survol des résumés */
+        .exercise-card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Style du titre dans chaque résumé */
+        .exercise-title {
+            font-size: 1.8em;
+            color: #007BFF;
+            margin-bottom: 10px;
+        }
+
+        /* Description dans les résumés */
+        .exercise-description {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        /* Style du bouton dans les résumés */
+        .exercise-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Effet de hover sur le bouton */
+        .exercise-button:hover {
+            background-color: #218838;
+        }
+
+        /* Style pour les liens d'entête */
+        nav {
+            width: 100%;
+            background-color: #fff;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+            color: #007BFF;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+            padding: 10px 20px;
+            border-radius: 30px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+            color: #0056b3;
+            background-color: #f0f0f0;
+            box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 40px;
+        }
+
+        footer a {
+            font-size: 1.2em;
+            color: #007BFF;
+            text-decoration: none;
+            margin: 0 15px;
+            color: #007BFF;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+            padding: 10px 20px;
+            border-radius: 30px;
+            display: inline-block;
+        }
+
+        footer a:hover {
+            color: #0056b3;
+            transform: scale(1.1);
+            background-color: #f0f0f0;
+            box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- En-tête avec liens -->
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="bibliotheque.php">Bibliothèque</a>
+    </nav>
+
+    <div class="container">
+        <!-- Titre principal -->
+        <h1>Bienvenue sur la page des Exercices PHP</h1>
+        <!-- Paragraphe explicatif -->
+        <p>Explorez les différentes séries d'exercices PHP pour améliorer vos compétences. Cliquez sur une série pour en savoir plus.</p>
+
+        <!-- Résumé des séries d'exercices -->
+        <div class="exercise-grid">
+            <!-- Résumé de la série 1 -->
+            <div class="exercise-card">
+                <div class="exercise-title">Série N°1 : PHP-MySQL</div>
+                <div class="exercise-description">Cette série comprend des exercices pour tester vos compétences en PHP et MySQL.</div>
+                <a href="bibliotheque.php" class="exercise-button">Voir la série</a>
+            </div>
+
+            <!-- Ajouter plus de résumés de séries ici -->
+        </div>
+    </div>
+
+    <!-- Footer avec lien vers GitHub -->
+    <footer>
+        <a href="https://github.com/FatouDieng05" target="_blank">Accéder à mon GitHub</a>
+    </footer>
+
+</body>
+</html>
